@@ -1,7 +1,6 @@
 package:
   name: komplexity
-  version: {{ environ.get('GIT_DESCRIBE_TAG', '') }}
-#  version: {{ GIT_DESCRIBE_TAG }}
+  version: "0.2.1" 
 
 source:
   git_url: https://github.com/eclarke/komplexity.git
