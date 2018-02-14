@@ -1,0 +1,25 @@
+package:
+  name: komplexity
+  version: "0.2.1"
+
+source:
+  git_url: https://github.com/eclarke/komplexity.git
+
+requirements:
+  build:
+    - rust # >1.21.0
+    - cargo # 0.24.0
+#    - gcc <4.8.5
+
+  run:
+    - rust # >1.21.0
+#    - libgcc 
+
+test:
+  commands:
+    - pwd
+    - kz -h
+
+about:
+  home: https://github.com/eclarke/komplexity
+
