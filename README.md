@@ -4,6 +4,6 @@ Recipe for installing komplexity via conda. Requires [miniconda](http://conda.py
 
 Build like:
 
-  git clone https://github.com/louiejtaylor/kz_conda
-  cd kz_conda
-  conda build komplexity -c clinicalgraphics
+    git clone https://github.com/louiejtaylor/kz_conda
+    cd kz_conda
+    conda build komplexity -c clinicalgraphics
