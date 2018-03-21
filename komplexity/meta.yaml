@@ -1,9 +1,16 @@
+{% set version = "0.3.0" %}
+
 package:
   name: komplexity
-  version: {{ environ.get('GIT_DESCRIBE_TAG', '') }}
+  version: {{ version }}
 
 source:
-  git_url: https://github.com/eclarke/komplexity.git
+  url: https://github.com/eclarke/komplexity/archive/v0.3.0.tar.gz
+  fn: komplexity-{{ version }}.tar.gz
+  sha256: 1094f81061253a613db53044020e992536bc2940dfc3b942c459fd7783fbad09
+
+build:
+  number: 0
 
 requirements:
   build:
