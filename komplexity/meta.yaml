@@ -1,24 +1,17 @@
-{% set version = "0.3.1" %}
+{% set version = "0.3.6" %}
 
 package:
   name: komplexity
   version: {{ version }}
 
 source:
-  url: https://github.com/eclarke/komplexity/archive/v{{ version }}.tar.gz
-  fn: komplexity-{{ version }}.tar.gz
-  sha256: 5e83afad1fdb1937a91e0da71b772ab4c65936bc1c9626b7bc603667cb7846af
+  url: https://github.com/eclarke/komplexity/releases/download/v{{ version }}/kz-v{{ version }}-linux.zip
+  fn: kz-v{{ version }}-linux.zip
+  sha256: 429899a7773fe7ab695beb521dfb3197cbbe1ccb6213dae717bf70bf9ec5794e
 
 build:
   number: 1
   string: musl
-
-requirements:
-  build:
-    - rust
-
-  run:
-    - rust
 
 test:
   commands:
