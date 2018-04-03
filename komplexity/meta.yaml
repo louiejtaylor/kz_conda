@@ -1,16 +1,17 @@
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: komplexity
   version: {{ version }}
 
 source:
-  url: https://github.com/eclarke/komplexity/archive/v0.3.0.tar.gz
+  url: https://github.com/eclarke/komplexity/archive/v{{ version }}.tar.gz
   fn: komplexity-{{ version }}.tar.gz
-  sha256: 1094f81061253a613db53044020e992536bc2940dfc3b942c459fd7783fbad09
+  sha256: 5e83afad1fdb1937a91e0da71b772ab4c65936bc1c9626b7bc603667cb7846af
 
 build:
-  number: 0
+  number: 1
+  string: musl
 
 requirements:
   build:
