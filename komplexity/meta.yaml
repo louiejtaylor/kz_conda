@@ -10,7 +10,7 @@ source:
   sha256: 429899a7773fe7ab695beb521dfb3197cbbe1ccb6213dae717bf70bf9ec5794e
 
 build:
-  number: 1
+  number: 2
   string: musl
 
 test:
@@ -19,4 +19,8 @@ test:
 
 about:
   home: https://github.com/eclarke/komplexity
+  summary: "Quickly score and/or mask low-complexity sequences using kmers"
 
+extra:
+  recipe-maintaners:
+    - louiejtaylor
